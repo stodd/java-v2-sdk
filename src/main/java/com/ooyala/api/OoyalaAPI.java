@@ -14,7 +14,7 @@
  * 5.   TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, (i) IN NO EVENT SHALL OOYALA BE LIABLE FOR ANY CONSEQUENTIAL, INCIDENTAL, INDIRECT, SPECIAL, PUNITIVE, OR OTHER DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR OTHER PECUNIARY LOSS) RELATING TO, ARISING FROM, IN CONNECTION WITH, OR INCIDENTAL TO THE SOFTWARE OR THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF OOYALA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND (ii) OOYALAâ€™S TOTAL AGGREGATE LIABILITY RELATING TO, ARISING FROM, IN CONNECTION WITH, OR INCIDENTAL TO THE SOFTWARE SHALL BE LIMITED TO THE ACTUAL DIRECT DAMAGES INCURRED UP TO MAXIMUM AMOUNT OF FIFTY DOLLARS ($50).
  */
 
-package src.main.java.com.ooyala.api;
+package com.ooyala.api;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -857,7 +857,7 @@ public class OoyalaAPI {
 						public com.ning.http.client.AsyncHandler.STATE onBodyPartReceived(
 								HttpResponseBodyPart bodyPart) throws Exception {
 							//startTime= System.currentTimeMillis();
-							System.out.println("URL"+requestURL + " starting");
+							//System.out.println("URL"+requestURL + " starting");
 							 latch.countDown();
 							builder.append(new String(bodyPart
 									.getBodyPartBytes()));
